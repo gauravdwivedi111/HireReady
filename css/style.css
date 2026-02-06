@@ -1,0 +1,676 @@
+/* ================== CSS VARIABLES ================== */
+:root {
+  --primary: #38bdf8;
+  --primary-dark: #0ea5e9;
+  --dark: #1f2933;
+  --light: #f8fafc;
+  --white: #ffffff;
+  --gray: #64748b;
+}
+
+/* ================== GLOBAL RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+/* ================== REUSABLE COMPONENTS ================== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
+.card {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  font-size: 14px;
+  background-color: var(--primary);
+  color: var(--dark);
+  border-radius: 20px;
+}
+
+/* ================== HEADER ================== */
+.site-header {
+  background-color: var(--dark);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* ================== HERO SECTION ================== */
+.hero {
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  padding: 80px 0;
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+/* Hero Visual */
+.hero-visual {
+  position: relative;
+  height: 300px;
+}
+
+.hero-circle {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  top: 40px;
+  left: 60px;
+  opacity: 0.3;
+}
+
+.mini-card {
+  position: absolute;
+  width: 180px;
+}
+
+.mini-card:first-child {
+  top: 20px;
+  right: 0;
+}
+
+.mini-card:last-child {
+  bottom: 20px;
+  left: 0;
+}
+
+/* ================== FEATURED COMPANIES ================== */
+.featured-companies {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.featured-companies h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.company-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+/* ================== JOB CATEGORIES ================== */
+.job-categories {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.job-categories h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.category-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================== HOW IT WORKS ================== */
+.how-it-works {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================== TESTIMONIALS ================== */
+.testimonials {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.testimonial-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================== FOOTER ================== */
+.site-footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+
+/* ================== JOBS PAGE ================== */
+.jobs-page {
+  padding: 60px 0;
+}
+
+/* Layout: Sidebar + Job Grid */
+.jobs-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Filters Sidebar */
+.filters {
+  position: sticky;
+  top: 100px;
+}
+
+.filters h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.filter-group label {
+  font-size: 14px;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+/* Job Listings Grid */
+.job-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Job Card */
+.job-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.company-name {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 6px;
+}
+
+.salary {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Skill badges spacing */
+.skills {
+  margin-bottom: 15px;
+}
+
+.skills .badge {
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination .btn {
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  color: var(--dark);
+}
+
+.pagination .btn:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* ================== RESPONSIVE (JOBS PAGE) ================== */
+@media (max-width: 768px) {
+  .jobs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    position: static;
+  }
+}
+
+
+
+/* ================== JOB DETAIL PAGE ================== */
+.job-detail-page {
+  padding: 60px 0;
+}
+
+/* Layout */
+.job-detail-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Main Job Info */
+.job-info h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.job-info .company-name {
+  color: var(--gray);
+  margin-bottom: 6px;
+}
+
+.job-info .salary {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.job-info .btn {
+  margin-bottom: 30px;
+}
+
+/* Job Sections */
+.job-section {
+  margin-bottom: 25px;
+}
+
+.job-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.job-section p {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.job-section ul {
+  padding-left: 20px;
+}
+
+.job-section li {
+  margin-bottom: 8px;
+  color: var(--gray);
+}
+
+/* Company Info Sidebar */
+.company-info h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.company-info p {
+  color: var(--gray);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.company-details {
+  list-style: none;
+}
+
+.company-details li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* ================== RESPONSIVE (JOB DETAIL) ================== */
+@media (max-width: 768px) {
+  .job-detail-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+   COMPANY PAGE STYLES
+========================= */
+
+/* Company Banner */
+.company-banner {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.company-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-banner p {
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/* Main Layout */
+.company-page {
+  padding: 3rem 0;
+}
+
+.company-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Card Overrides */
+.company-page .card {
+  padding: 1.8rem;
+}
+
+/* About Section */
+.company-about h2,
+.company-details h2,
+.company-jobs h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.company-about p {
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Company Details */
+.company-details ul {
+  list-style: none;
+}
+
+.company-details li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.company-details li:last-child {
+  border-bottom: none;
+}
+
+/* Open Positions */
+.company-jobs {
+  margin-top: 1rem;
+}
+
+.company-job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Job Card */
+.job-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.job-card .salary {
+  color: #16a34a;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .company-banner h1 {
+    font-size: 2rem;
+  }
+}
+
+
+/* =========================
+   AUTH PAGE (LOGIN)
+========================= */
+
+.auth-section {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+  padding: 40px 20px;
+}
+
+.auth-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.auth-card h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1f2933;
+}
+
+.auth-card p {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   AUTH FORM
+========================= */
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-form input {
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* =========================
+   AUTH BUTTON
+========================= */
+
+.auth-btn {
+  margin-top: 10px;
+  background-color: #38bdf8;
+  color: #1f2933;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #0ea5e9;
+  color: #ffffff;
+}
+
+/* =========================
+   AUTH FOOTER
+========================= */
+
+.auth-footer {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.auth-footer a {
+  color: #38bdf8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 30px 25px;
+  }
+
+  .auth-card h2 {
+    font-size: 26px;
+  }
+}
