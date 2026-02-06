@@ -1,137 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HireReady | Find Your Dream Job</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header class="site-header">
-        <nav class="navbar">
-            <h1 class="logo">HireReady</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="company.html">Companies</a></li>
-            </ul>
 
-            <a href="auth.html" class="login-btn">Login</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">HireReady</a>
 
-    <main>
-        <section class = "hero">
-            <div class="hero-content">
-                <h2>Find Your Dream Job Today</h2>
-                <p>
-                    Explore thousands of job opportunities from top companies and take the next step in your career.
-                </p>
-                <a href="jobs.html" class="hero-btn">Browse Jobs</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="company.html">Companies</a></li>
+      </ul>
 
-            </div>
-        </section>
-    </main>
+      <a href="auth.html" class="btn btn-primary">Login</a>
+    </nav>
+  </header>
 
-    <section class="featured-companies">
-        <h2>Featured Companies</h2>
-        <div class="company-list">
-            <div class="company-card">Google</div>    
-            <div class="company-card">Amazon</div>
-            <div class="company-card">Microsoft</div>
-            <div class="company-card">Infosys</div>   
-            <div class="company-card">TCS</div>    
-            <div class="company-card">Wipro</div>  
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container hero-wrapper">
 
-
-    <section class="job-categories">
-        <h2>Popular Job Categories</h2>
-        <div class="category-list">
-            <div class="category-card">
-                <h3>Software Development</h3>
-                <p>120+ jobs</p>
-            </div>
-            <div class="category-card">
-                <h3>Data Science</h3>
-                <p>90+ jobs</p>
-            </div>
-            <div class="category-card">
-                <h3>UI / UX Design</h3>
-                <p>150+ jobs</p>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps">
-            <div class="step">
-                <h3>1. Search Jobs</h3>
-                <p>Browse jobs from top companies across various categories.</p>
-            </div>
-            <div class="step">
-                <h3>2. Apply Online</h3>
-                <p>Apply easily using your profile and resume.</p>
-            </div>
-            <div class="step">
-                <h3>3. Get Hired</h3>
-                <p>Get shortlisted and start your career journey.</p>
-            </div> 
+        <div class="hero-content">
+          <h2>Find Your Dream Job Today</h2>
+          <p>
+            Explore thousands of job opportunities from top companies and take the next step in your career.
+          </p>
+          <a href="jobs.html" class="btn btn-primary">Browse Jobs</a>
         </div>
 
+        <!-- Pure CSS Hero Illustration -->
+        <div class="hero-visual">
+          <div class="hero-circle"></div>
+
+          <div class="mini-card card">
+            <h4>Frontend Developer</h4>
+            <span class="badge">₹6–10 LPA</span>
+          </div>
+
+          <div class="mini-card card">
+            <h4>Data Analyst</h4>
+            <span class="badge">₹5–9 LPA</span>
+          </div>
+        </div>
+
+      </div>
     </section>
+  </main>
 
+  <!-- Featured Companies -->
+  <section class="featured-companies">
+    <div class="container">
+      <h2>Featured Companies</h2>
 
-    <section class="testimonials">
-  <h2>What Our Users Say</h2>
-
-  <div class="testimonial-list">
-    <div class="testimonial-card">
-      <p>
-        “HireReady helped me land my first software job within weeks.
-        The platform is easy to use and very effective.”
-      </p>
-      <h4>— Rahul Sharma</h4>
+      <div class="company-list">
+        <div class="card">Google</div>
+        <div class="card">Amazon</div>
+        <div class="card">Microsoft</div>
+        <div class="card">Infosys</div>
+        <div class="card">TCS</div>
+        <div class="card">Wipro</div>
+      </div>
     </div>
+  </section>
 
-    <div class="testimonial-card">
-      <p>
-        “Great job opportunities and smooth application process.
-        Highly recommended for freshers.”
-      </p>
-      <h4>— Priya Verma</h4>
+  <!-- Job Categories -->
+  <section class="job-categories">
+    <div class="container">
+      <h2>Popular Job Categories</h2>
+
+      <div class="category-list">
+        <div class="card">
+          <h3>Software Development</h3>
+          <p>120+ jobs</p>
+        </div>
+
+        <div class="card">
+          <h3>Data Science</h3>
+          <p>90+ jobs</p>
+        </div>
+
+        <div class="card">
+          <h3>UI / UX Design</h3>
+          <p>150+ jobs</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="testimonial-card">
-      <p>
-        “A clean and user-friendly job portal.
-        I found multiple relevant roles quickly.”
-      </p>
-      <h4>— Ankit Patel</h4>
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+
+      <div class="steps">
+        <div class="card">
+          <h3>1. Search Jobs</h3>
+          <p>Browse jobs from top companies across various categories.</p>
+        </div>
+
+        <div class="card">
+          <h3>2. Apply Online</h3>
+          <p>Apply easily using your profile and resume.</p>
+        </div>
+
+        <div class="card">
+          <h3>3. Get Hired</h3>
+          <p>Get shortlisted and start your career journey.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Users Say</h2>
 
-<footer class="site-footer">
-  <div class="footer-content">
-    <p>© 2026 HireReady. All rights reserved.</p>
+      <div class="testimonial-list">
+        <div class="card">
+          <p>
+            “HireReady helped me land my first software job within weeks.
+            The platform is easy to use and very effective.”
+          </p>
+          <h4>— Rahul Sharma</h4>
+        </div>
 
-    <ul class="footer-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="jobs.html">Jobs</a></li>
-      <li><a href="company.html">Companies</a></li>
-      <li><a href="auth.html">Login</a></li>
-    </ul>
-  </div>
-</footer>
+        <div class="card">
+          <p>
+            “Great job opportunities and smooth application process.
+            Highly recommended for freshers.”
+          </p>
+          <h4>— Priya Verma</h4>
+        </div>
 
+        <div class="card">
+          <p>
+            “A clean and user-friendly job portal.
+            I found multiple relevant roles quickly.”
+          </p>
+          <h4>— Ankit Patel</h4>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 HireReady. All rights reserved.</p>
 
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="company.html">Companies</a></li>
+        <li><a href="auth.html">Login</a></li>
+      </ul>
+    </div>
+  </footer>
 
-    
 </body>
 </html>
